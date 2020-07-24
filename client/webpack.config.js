@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+  mode: 'development',
   entry: path.resolve(__dirname, "./src/index.tsx"),
   output: {
     path: path.resolve(__dirname, "public/js"),
@@ -25,9 +26,8 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: './public',
+    contentBase: path.resolve(__dirname, 'public'),
     historyApiFallback: true,
-    inline: true,
     hot: true,
     port: 3000,
     open: false
