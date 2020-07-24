@@ -39,6 +39,7 @@
 
 # production
 /client/build
+/client/public/js
 
 # misc
 /client/.DS_Store
