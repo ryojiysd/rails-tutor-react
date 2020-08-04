@@ -53,3 +53,5 @@
 /client/yarn-error.log*
 
 /tsconfig.json
+
+.DS_Store
