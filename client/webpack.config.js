@@ -20,6 +20,29 @@ module.exports = {
         loader: 'ts-loader'
       },
       {
+        test: /\.css$/,
+        loaders: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: "css-loader"
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sassOptions: {
+                outputStyle: 'expanded',
+              }
+            }
+          }
+        ]
+      },
+      {
         enforce: "pre",
         test: /\.tsx?$/,
         loader: "source-map-loader"
