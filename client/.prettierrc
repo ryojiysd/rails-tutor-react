@@ -1,7 +1,8 @@
 {
-    "printWidth": 100,
+    "printWidth": 120,
     "tailingComma": "all",
-    "tabWidth": 4,
+    "tabWidth": 2,
     "semi": true,
-    "singleQuote": true
+    "singleQuote": true,
+    parset: typescript
 }

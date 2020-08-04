@@ -20,6 +20,15 @@ module.exports = {
       "project": "./tsconfig.json"
     },
     "rules": {
-        "prettier/prettier": "error"
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 120,
+                "tabWidth": 2,
+                "useTabs": false,
+                "semi": true,
+                "singleuote": true
+            }
+        ]
     }
 };
