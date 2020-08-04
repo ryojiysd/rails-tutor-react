@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch } from 'react-router';
 import { BrowserRouter, Route } from 'react-router-dom';
+
 import Home from './home';
 import Help from './help';
 import About from './about';
@@ -26,19 +27,19 @@ const Router = () => {
 };
 
 const AppHeader = () => (
-  <header className="navbar navbar-dixed-top navbar-inverse">
+  <header className="navbar navbar-expand-md navbar-fixed-top bg-dark">
     <div className="container">
-      <a href="#" id="logo"></a>
+      <a className="navbar-brand" href="#" id="logo">sample app</a>
       <nav>
-        <ul className="nav navbar-nav navbar-right">
-          <li>
-            <a href="/">Home</a>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" href="/">Home </a>
           </li>
-          <li>
-            <a href="/help">Help</a>
+          <li className="nav-item">
+            <a className="nav-link" href="/help">Help </a>
           </li>
-          <li>
-            <a href="#">Log in</a>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Log in </a>
           </li>
         </ul>
       </nav>
@@ -47,9 +48,19 @@ const AppHeader = () => (
 );
 
 const AppFooter = () => (
-  <div>
-    <p>footer</p>
-  </div>
+  <footer className="footer">
+    <small>
+      The <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
+      by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+    </small>
+    <nav>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="http://news.railstutorial.org/">News</a></li>
+      </ul>
+    </nav>
+  </footer>
 );
 
 export default App;
