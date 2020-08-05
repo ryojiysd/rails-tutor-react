@@ -5,6 +5,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './home';
 import Help from './help';
 import About from './about';
+import Contact from './contact'
 
 const App = () => {
   return <Router />;
@@ -19,6 +20,7 @@ const Router = () => {
           <Route exact path="/" component={Home} />
           <Route path="/help" component={Help} />
           <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </BrowserRouter>
       <AppFooter />
@@ -56,7 +58,7 @@ const AppFooter = () => (
     <nav>
       <ul>
         <li><a href="/about">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
         <li><a href="http://news.railstutorial.org/">News</a></li>
       </ul>
     </nav>
