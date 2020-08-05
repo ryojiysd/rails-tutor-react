@@ -15,7 +15,7 @@ class Home extends React.Component {
             <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a> sample application.
           </h2>
 
-          <a href="#" className="btn btn-lg btn-primary">Sign up now!</a>
+          <a href="/signup" className="btn btn-lg btn-primary">Sign up now!</a>
         </div>
         <a href="http://rubyonrails.org/"><img src="images/rails.png" alt="Rails logo"/></a>
       </div>

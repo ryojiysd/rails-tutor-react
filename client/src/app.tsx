@@ -5,7 +5,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './home';
 import Help from './help';
 import About from './about';
-import Contact from './contact'
+import Contact from './contact';
+import Signup from './users/new'
 
 const App = () => {
   return <Router />;
@@ -21,6 +22,7 @@ const Router = () => {
           <Route path="/help" component={Help} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/signup" component={Signup} />
         </Switch>
       </BrowserRouter>
       <AppFooter />
